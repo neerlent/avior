@@ -2,6 +2,7 @@
   "domain": "avior",
   "name": "Avior",
   "documentation": "",
+  "homeassistant": "0.97.0",
   "requirements": [],
   "dependencies": [],
   "codeowners": []
