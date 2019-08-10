@@ -38,6 +38,10 @@ DATA_AVIOR = 'avior'
 SERVICE_SETALLZONES = 'avior_set_all_zones'
 ATTR_SOURCE = 'source'
 
+MEDIA_PLAYER_SCHEMA = vol.Schema({
+    ATTR_ENTITY_ID: cv.comp_entity_ids,
+})
+
 # set all zones takes source string argument
 AVIOR_SETALLZONES_SCHEMA = MEDIA_PLAYER_SCHEMA.extend({
     vol.Required(ATTR_SOURCE): cv.string
