@@ -162,8 +162,9 @@ class AviorZone(MediaPlayerDevice):
 
     @property
     def should_poll(self):
-        """Don't poll."""
-        return False
+        """Object must be polled for current state since device will
+        not push any updates itself."""
+        return True
 
     @property
     def assumed_state(self):
