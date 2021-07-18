@@ -8,7 +8,7 @@ import voluptuous as vol
 
 from homeassistant.components.media_player import (
     DOMAIN, PLATFORM_SCHEMA, SUPPORT_SELECT_SOURCE,
-    MediaPlayerDevice)
+    MediaPlayerEntity)
 from homeassistant.const import (
     ATTR_ENTITY_ID, CONF_NAME, CONF_PORT, STATE_OFF, STATE_ON)
 import homeassistant.helpers.config_validation as cv
@@ -132,7 +132,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
                            schema=AVIOR_SETEDIDMODE_SCHEMA)
 
 
-class AviorZone(MediaPlayerDevice):
+class AviorZone(MediaPlayerEntity):
     """Representation of a Avior matrix zone."""
 
     def __init__(self, avior, sources, zone_id, zone_name):
