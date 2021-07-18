@@ -3,6 +3,7 @@
   "name": "Avior",
   "documentation": "",
   "homeassistant": "0.97.0",
+  "version": "0.1.1",
   "requirements": [],
   "dependencies": [],
   "codeowners": []
